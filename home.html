@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HaiyuuBandoeng</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>    
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link rel="stylesheet" href="home.css">
+        <link rel="icon" href="image/logohb.png" type="image/png" />
+        <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href = ""><img src='image/logohb.png' id = "logo"/></a>
+                <div class="search">
+                    <form>
+                        <input class="form-control" type="text" placeholder="Search for..."width="200" height="100"/>
+                    </form>
+                </div>
+                <ul id="navigasi">
+                    <li><a class="active" href="indexxx.html">HOME</a></li>
+                    <li><a href="wisata.html">WISATA</a></li>
+                    <li><a href="kuliner.html">KULINER</a></li>
+                    <li class="dropdown"><a href="#">BUDAYA</a>
+                        <ul class="isi-dropdown">
+                            <a href="kesenian.html">KESENIAN</a>
+                            <a href="bahasa.html">BAHASA</a>
+                        </ul>
+                    </li>
+                    <li><a href="event.html">EVENT</a></li>
+                </ul>
+                <div class="menu-toggle">
+                  <input type="checkbox"/>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+            </div>
+            <script src="javascript.js"></script>
+        </header>
+        <main>
+        <audio hidden autoplay loop>
+            <source src="Backsound Sunda.mp3" type="audio/mp3">
+        </audio>
+        <section class="site-title">
+            <div class="site-background">
+                <h1>Sejarah Bandoeng</h1>
+                <p>
+                    "Lorem ipsum dolor sit amet, porro conceptam per ad. </br>
+                    Te nec nisl mandamus forensibus, bonorum deseruisse an sea,</br>
+                    sit solum simul vidisse in. Fastidii molestiae ei duo, </br>
+                    no mea latine tacimates. Novum eirmod mel ad. </br>
+                    Ea sea malorum molestiae reformidans.</br>
+                    Te pri delicata constituam, usu an commune detraxit tractatos.</br> 
+                    Dico appareat per ad, vel ad feugait eligendi necessitatibus. </br>
+                    Ex pri purto veniam, cum ne nusquam menandri, quem augue periculis sea cu. </br>
+                    No illum ignota cotidieque est, an sit simul dolores.</br>
+                    Lorem ipsum dolor sit amet, porro conceptam per ad". </br>
+                </p>
+            </div>
+            <div class="site-background-demografi">
+                <h1>Demografi</h1>
+                <a href = ""><img src='image/demografi.png'/></a>
+                <p>
+                        "Kota Bandung memiliki luas wilayah 16.731 hektar yang secara administratif terbagi atas 30 
+                        Kecamatan, 151 Kelurahan, 1.583 RW, dan 9.884 RT. Kecamatan yang terluas adalah Kecamatan Gedebage,
+                        dengan luas wilayah 958 Hektar dan Kecamatan yang terkecil Kecamatan Astanaanyar dengan luas wilayah 89 hektar. </br>
+                        Sementara itu, jumlah penduduk Kota Bandung tahun 2020 semester I adalah 2.490.386 jiwa, dengan jumlah laki-laki sebanyak 1.251.636 jiwa, </br>
+                        perempuan sebanyak 1.238.750 jiwa dan kepala keluarga sebanyak 807.973 kepala keluarga".
+                </p>
+            </div>
+            <!-- Created By CodingNepal -->
+  <div class="wrapper">
+    <div class="display">
+       <div id="time"></div>
+    </div>
+    <span></span>
+    <span></span>
+ </div>
+ <script>
+    setInterval(()=>{
+      const time = document.querySelector(".display #time");
+      let date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+      let day_night = "AM";
+      if(hours > 12){
+        day_night = "PM";
+        hours = hours - 12;
+      }
+      if(seconds < 10){
+        seconds = "0" + seconds;
+      }
+      if(minutes < 10){
+        minutes = "0" + minutes;
+      }
+      if(hours < 10){
+        hours = "0" + hours;
+      }
+      time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+    });
+ </script>
+        </section>
+        <!-- Destination     -->
+        <section class="slide-destination">
+            <div class="title-destination">
+                <h1>Destination</h1>
+            <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>             -->
+            </div>
+        </section>
+        <div class="slider owl-carousel">
+            <div class="card">
+                <div class="img">
+                <img src="image/taman.jpg" alt="">
+                </div>
+                <div class="content">
+                <div class="title">
+                    Hutan Menyala
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+                </p>
+                <!-- <div class="btn">
+                    <button>Read more</button>
+                </div> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                <img src="image/tangkuban.png" alt="">
+                </div>
+                <div class="content">
+                <div class="title">
+                    Tangkuban Perahu
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+                </p>
+                <!-- <div class="btn">
+                    <button>Read more</button>
+                </div> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                <img src="image/pvj.jpeg" alt="">
+                </div>
+                <div class="content">
+                <div class="title">
+                    Paris Van Java
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <!-- <div class="sub-title">
+                    *****
+                </div> -->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+                </p>
+                <!-- <div class="btn">
+                    <button>Read more</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+            });
+        </script>
+        <!-- EVENT -->
+        <section class="slide-event">
+            <div class="title-event">
+             <a href="event.html"><h1>Event</h1></a>
+            </div>
+        </section>
+        <div class="center">
+            <div class="front-face">
+               <div class="contents front">
+                  <p>
+                     Charity Concert
+                  </p>
+                  <span>Pussenif, Bandung</span>
+               </div>
+            </div>
+            <div class="back-face">
+               <div class="contents back">
+                  <h2>
+                     Sabtu
+                  </h2>
+                  <span> 20 Mei 2022</span>
+                  <!-- <div class="icons">
+                     <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-twitter"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-linkedin-in"></i>
+                  </div> -->
+               </div>
+            </div>
+         </div> 
+         <!-- 2 -->
+         <div class="left">
+            <div class="front-face1">
+               <div class="contents front">
+                  <p>
+                     INLANDER
+                  </p>
+                  <span>ISBI, Bandung</span>
+               </div>
+            </div>
+            <div class="back-face1">
+               <div class="contents back">
+                   <a href="event.html">
+                  <h2>
+                     Sabtu
+                  </h2></a>
+                  <span> 20 April 2022</span>
+                  <!-- <div class="icons">
+                     <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-twitter"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-linkedin-in"></i>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+          <!-- 3 -->
+          <div class="right">
+            <div class="front-face2">
+               <div class="contents front">
+                  <p>
+                     Kabaret si Kabayayan
+                  </p>
+                  <span>Grand Tjokro, Bandung</span>
+               </div>
+            </div>
+            <div class="back-face2">
+               <div class="contents back">
+                  <h2>
+                     Sabtu
+                  </h2>
+                  <span> 20 Mei 2022</span>
+               </div>
+            </div>
+         </div>
+         <!-- Kuliner -->
+         <section class="slide-kuliner">
+            <div class="title-kuliner">
+             <h1>Kuliner Bandoeng</h1>
+            </div>
+        </section>
+    </section>
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img">
+            <img src="image/kuliner2.jpg" alt="">
+            </div>
+            <div class="content">
+            <div class="title">
+                Bandros
+            </div>
+            <div class="sub-title">
+                <p>Jl. Venus No. 34 Siliwangi</p>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+            </p>
+            <!-- <div class="btn">
+                <button>Read more</button>
+            </div> -->
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+            <img src="image/kuliner3.jpg" alt="">
+            </div>
+            <div class="content">
+            <div class="title">
+                Cimol
+            </div>
+            <div class="sub-title">
+                <p>Jl. Cihampelas No. 90</p>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+            </p>
+            <!-- <div class="btn">
+                <button>Read more</button>
+            </div> -->
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+            <img src="image/kuliner1.jpg" alt="">
+            </div>
+            <div class="content">
+            <div class="title">
+                Gurandil
+            </div>
+            <div class="sub-title">
+                <p>Jl. Van Deventer No. 2</p>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+            </p>
+            <!-- <div class="btn">
+                <button>Read more</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+        });
+    </script>
+    <section class="slide-oleh">
+        <div class="title-oleh">
+         <h1>Oleh-Oleh Bandoeng</h1>
+        </div>
+    </section>
+    <div class="slider owl-carousel">
+        <div class="card">
+           <div class="img">
+              <img src="image/oleh2.jpg" alt="">
+           </div>
+           <div class="content">
+              <div class="title">
+                 Ade Souvenir
+              </div>
+              <div class="sub-title">
+                 Jl. Cihampelas No. 9
+              </div>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+              </p>
+              <div class="btn">
+                 <button>Open Maps</button>
+              </div>
+           </div>
+        </div>
+        <div class="card">
+           <div class="img">
+              <img src="image/oleh3.jpg" alt="">
+           </div>
+           <div class="content">
+              <div class="title">
+                 Bandung Makuta Cake
+              </div>
+              <div class="sub-title">
+                 Jl. Van Deventer No. 02
+              </div>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+              </p>
+              <div class="btn">
+                <a href="https://goo.gl/maps/4VsQkuXtS5am7sMZ9"><button>Open Maps</button></a>
+              </div>
+           </div>
+        </div>
+        <div class="card">
+           <div class="img">
+              <img src="image/oleh5.jpg" alt="">
+           </div>
+           <div class="content">
+              <div class="title">
+                 Girilaya Wayang Golek
+              </div>
+              <div class="sub-title">
+                 Jl. Giriharja No. 130
+              </div>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+              </p>
+              <div class="btn">
+                 <button>Open Maps</button>
+              </div>
+           </div>
+        </div>
+     </div>
+     <script>
+        $(".slider").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+          autoplayHoverPause: true,
+        });
+     </script>    
+        <footer>
+            <div class="content">
+              <div class="left box">
+                <div class="upper">
+                  <div class="topic">About us</div>
+                  <p>HaiyuuBandoeng merupakan website yang mengenalkan budaya, kesenian, 
+                      kuliner dan travel di Jawa Barat.</p></br>
+                </div>
+                <div class="lower">
+                  <div class="topic">Contact us</div>
+                  <div class="phone">
+                    <a href="#"><i class="fas fa-phone-volume"></i>+6203 29383 1970</a>
+                  </div>
+                  <div class="email">
+                    <a href="#"><i class="fas fa-envelope"></i>HaiyuuBandoeng@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                  <input type="text" placeholder="Enter email address">
+                  <input type="submit" name="" value="Send">
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="bottom">
+              <p>Copyright © 2020 <a href="#">HaiyuuBandoeng</a> All rights reserved</p>
+            </div>
+          </footer>
+
+        </main>    
+    </body>
+</html>
